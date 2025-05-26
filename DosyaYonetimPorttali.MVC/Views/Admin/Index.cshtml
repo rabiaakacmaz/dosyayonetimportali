@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Yönetici Paneli";
+    var token = Context.Session.GetString("token"); 
+}
+
+<h2>Yönetici Dosya Paneli</h2>
+
+<div class="mb-3">
+    <input type="file" id="dosyaInput" class="form-control" />
+    <button id="btnYukle" class="btn btn-primary mt-2">Dosya Yükle</button>
+</div>
+
+<hr />
+
+<table class="table table-bordered" id="dosyaTablo">
+    <thead>
+        <tr>
+            <th>Dosya Adı</th>
+            <th>Yüklenme Tarihi</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const token = '@token';
+
+        if (!token) {
+            alert("Oturum süresi dolmuş. Lütfen tekrar giriş yapın.");
+            window.location.href = "/Account/Login";
+        }
+
+        $(document).ready(function () {
+
+            listele();
+
+            function listele() {
+                $.ajax({
+                    url: "https://localhost:7151/api/Dosyalar",
+                    type: "GET",
+                    headers: {
+                        "Authorization": "Bearer " + token
+                    },
+                    success: function (data) {
+                        let html = "";
+                        $.each(data, function (i, dosya) {
+                            html += `<tr>
+                                <td>${dosya.dosyaAdi}</td>
+                                <td>${new Date(dosya.yuklenmeTarihi).toLocaleString()}</td>
+                                <td><button class="btn btn-danger btnSil" data-id="${dosya.id}">Sil</button></td>
+                            </tr>`;
+                        });
+                        $("#dosyaTablo tbody").html(html);
+                    },
+                    error: function (xhr) {
+                        alert("❌ Dosyalar getirilemedi. Hata: " + xhr.status);
+                    }
+                });
+            }
+
+            $("#btnYukle").click(function () {
+                const file = $("#dosyaInput")[0].files[0];
+                if (!file) return alert("Lütfen bir dosya seçin.");
+
+                let formData = new FormData();
+                formData.append("file", file);
+
+                $.ajax({
+                    url: "https://localhost:7151/api/Dosyalar/Yukle",
+                    type: "POST",
+                    processData: false,
+                    contentType: false,
+                    headers: {
+                        "Authorization": "Bearer " + token
+                    },
+                    data: formData,
+                    success: function () {
+                        alert(" Dosya başarıyla yüklendi.");
+                        listele();
+                    },
+                    error: function (xhr) {
+                        alert(" Yükleme başarısız. Hata: " + xhr.status);
+                    }
+                });
+            });
+
+            $(document).on("click", ".btnSil", function () {
+                let id = $(this).data("id");
+                if (!confirm("Bu dosyayı silmek istediğinize emin misiniz?")) return;
+
+                $.ajax({
+                    url: "https://localhost:7151/api/Dosyalar/" + id,
+                    type: "DELETE",
+                    headers: {
+                        "Authorization": "Bearer " + token
+                    },
+                    success: function () {
+                        alert(" Dosya silindi.");
+                        listele();
+                    },
+                    error: function (xhr) {
+                        alert("Silme başarısız. Hata: " + xhr.status);
+                    }
+                });
+            });
+        });
+    </script>
+}

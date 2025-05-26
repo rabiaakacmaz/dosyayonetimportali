@@ -1,0 +1,19 @@
+﻿@model LoginModel
+<h2>Giriş Yap</h2>
+
+<form asp-action="Login" method="post">
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Şifre</label>
+        <input asp-for="Password" type="password" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <div class="text-danger mt-2">@ViewBag.Error</div>
+}

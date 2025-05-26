@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{416BC62E-F173-4162-8313-E19D1198650F}|DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC.csproj|c:\\users\\rabia\\desktop\\dosyayonetimporttali.mvc\\dosyayonetimporttali.mvc\\views\\dosya\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{416BC62E-F173-4162-8313-E19D1198650F}|DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC.csproj|solutionrelative:dosyayonetimporttali.mvc\\views\\dosya\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{416BC62E-F173-4162-8313-E19D1198650F}|DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC.csproj|c:\\users\\rabia\\desktop\\dosyayonetimporttali.mvc\\dosyayonetimporttali.mvc\\models\\dosyadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{416BC62E-F173-4162-8313-E19D1198650F}|DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC.csproj|solutionrelative:dosyayonetimporttali.mvc\\models\\dosyadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{416BC62E-F173-4162-8313-E19D1198650F}|DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC.csproj|c:\\users\\rabia\\desktop\\dosyayonetimporttali.mvc\\dosyayonetimporttali.mvc\\controllers\\dosyacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{416BC62E-F173-4162-8313-E19D1198650F}|DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC.csproj|solutionrelative:dosyayonetimporttali.mvc\\controllers\\dosyacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{416BC62E-F173-4162-8313-E19D1198650F}|DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC.csproj|c:\\users\\rabia\\desktop\\dosyayonetimporttali.mvc\\dosyayonetimporttali.mvc\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{416BC62E-F173-4162-8313-E19D1198650F}|DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC.csproj|solutionrelative:dosyayonetimporttali.mvc\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC\\Views\\Dosya\\Index.cshtml",
+              "RelativeDocumentMoniker": "DosyaYonetimPorttali.MVC\\Views\\Dosya\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC\\Views\\Dosya\\Index.cshtml",
+              "RelativeToolTip": "DosyaYonetimPorttali.MVC\\Views\\Dosya\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T07:55:58.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DosyaDto.cs",
+              "DocumentMoniker": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC\\Models\\DosyaDto.cs",
+              "RelativeDocumentMoniker": "DosyaYonetimPorttali.MVC\\Models\\DosyaDto.cs",
+              "ToolTip": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC\\Models\\DosyaDto.cs",
+              "RelativeToolTip": "DosyaYonetimPorttali.MVC\\Models\\DosyaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T07:51:56.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DosyaController.cs",
+              "DocumentMoniker": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC\\Controllers\\DosyaController.cs",
+              "RelativeDocumentMoniker": "DosyaYonetimPorttali.MVC\\Controllers\\DosyaController.cs",
+              "ToolTip": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC\\Controllers\\DosyaController.cs",
+              "RelativeToolTip": "DosyaYonetimPorttali.MVC\\Controllers\\DosyaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T07:50:36.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "DosyaYonetimPorttali.MVC\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rabia\\Desktop\\DosyaYonetimPorttali.MVC\\DosyaYonetimPorttali.MVC\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "DosyaYonetimPorttali.MVC\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAuwG4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T07:47:48.333Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
